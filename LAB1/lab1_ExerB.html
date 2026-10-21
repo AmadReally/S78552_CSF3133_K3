@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Problem B: Campus Coding Club home page (corrected) -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Campus Coding Club</title>
+</head>
+<body>
+    <!--
+    Errors found in the given code:
+    Error 1 (Line 1): missing DOCTYPE declaration, must add the html doctype at the top
+    Error 2 (Line 1): html tag missing lang attribute, should be html lang="en"
+    Error 3 (Line 3): title tag is not closed, needs a closing title tag
+    Error 4 (Line 7): h1 is closed with a closing h2 tag, must be closed with a closing h1 tag
+    Error 5 (Line 8): strong and em tags are wrongly nested, they must close in reverse order
+    Error 6 (Line 8): p tag is not closed, needs a closing p tag
+    Error 7 (Line 9): h2 is closed with an opening h2 tag, must use a closing h2 tag
+    Error 8 (Line 11): first li tag is not closed, needs a closing li tag
+    Error 9 (Line 14): ul list is closed with a closing ol tag, must use a closing ul tag
+    Error 10 (Line 15): href value is not in quotes and has no protocol, should be href="https://www.umt.edu.my"
+    Error 11 (Line 16): img tag has no alt attribute, must add a meaningful alt text
+    Error 12 (Line 17): ampersand and (c) are not proper special characters, use the ampersand entity and the copyright entity
+    Error 13 (Line 18): missing closing html tag at the end of the file
+    -->
+
+    <!-- Navigation using relative links -->
+    <p><a href="index.html">Home</a> | <a href="contact.html">Contact Us</a></p>
+
+    <!-- Main heading and meeting information -->
+    <h1>Welcome to Campus Coding Club</h1>
+    <p>We meet every <strong><em>Wednesday</em></strong> at Lab 3.</p>
+
+    <!-- Activities list -->
+    <h2>Our Activities</h2>
+    <ul>
+        <li>Weekly coding sessions</li>
+        <li>Hackathon</li>
+        <li>Web design workshop</li>
+    </ul>
+
+    <!-- Advisor quote using blockquote -->
+    <h2>Words from Our Advisor</h2>
+    <blockquote>
+        Coding is a skill best learned by building real projects together.
+    </blockquote>
+    <p>- Club Advisor</p>
+
+    <!-- Link to the university website -->
+    <p>Visit our university: <a href="https://www.umt.edu.my">UMT Website</a></p>
+
+    <!-- Club image -->
+    <img src="club.jpg" alt="Members of Campus Coding Club at a coding session">
+
+    <!-- Footer with special characters -->
+    <p>&copy; 2026 Campus Coding Club &amp; Friends</p>
+</body>
+</html>

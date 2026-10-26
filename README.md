@@ -12,7 +12,7 @@ Koleksi lab exercise **CSF3133 (Web Design)** di Universiti Malaysia Terengganu 
 Klik link di bawah untuk terus buka website:
 | Folder | Penerangan | Link |
 |-----|------------|------||
-|Lab1   |Folder Lab 1 |[Buka](https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB1)
+|Lab1   |Folder Lab 1 |[Buka](https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB1)|
  
 | Lab | Penerangan | Link |
 |-----|------------|------|

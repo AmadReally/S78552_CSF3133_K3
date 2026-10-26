@@ -13,6 +13,7 @@ Klik link di bawah untuk terus buka website:
  
 | Lab | Penerangan | Link |
 |-----|------------|------|
+| 🦕 Main | Readme  page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/) |
 | 🙋 Lab 1 | Personal webpage | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1.html) |
 | ☕ Lab 1 (Problem A) | Local business page: Kopi & Roti Café | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerA.html) |
 | 💻 Lab 1 (Problem B) | Campus Coding Club: home page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerB.html) |

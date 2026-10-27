@@ -18,6 +18,9 @@ Klik link di bawah untuk terus buka website:
 | ☕ Lab 1 (Problem A) | Local business page: Kopi & Roti Café | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerA.html) |
 | 💻 Lab 1 (Problem B) | Campus Coding Club: home page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerB.html) |
 | 📇 Lab 1 (Problem B) | Campus Coding Club: contact page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/contact.html) |
+| 📇 Lab 2 | Personal webpage | Table self page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/table.html) |
+| 📇 Lab 2 (Problem B) | Campus Coding Club: contact page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2.html) |
+
  
 ---
 
@@ -26,6 +29,7 @@ Klik link di bawah untuk terus buka website:
 | Folder | Penerangan | Link |
 | --- | --- | --- |
 | `LAB1` | Folder Lab 1 | [Buka](https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB1) |
+| `LAB2` | Folder Lab 2 | [Buka](https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB2) |
 
  
 ## 📚 Apa yang dipraktikkan
@@ -52,8 +56,9 @@ S78552_CSF3133_K3/
     ├── index.html
     ├── club.jpg
     └── kopi-roti.jpg
-```
- 
+└── LAB2/
+    ├── table.html
+    ├── lab2.html 
 ---
  
 ## 👤 Pelajar

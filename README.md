@@ -18,8 +18,8 @@ Klik link di bawah untuk terus buka website:
 | ☕ Lab 1 (Problem A) | Local business page: Kopi & Roti Café | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerA.html) |
 | 💻 Lab 1 (Problem B) | Campus Coding Club: home page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerB.html) |
 | 📇 Lab 1 (Problem B) | Campus Coding Club: contact page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/contact.html) |
-| 📇 Lab 2 | Personal webpage | Table self page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/table.html) |
-| 📇 Lab 2 (Problem B) | Campus Coding Club: contact page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2.html) |
+| 📇 Lab 2 | Personal webpage  | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2.html) |
+| 📇 Lab 2 (Problem A) | Insert Data: table page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/table.html) |
 
  
 ---

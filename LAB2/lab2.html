@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+
+    <!-- Semantic: header -->
+    <header>
+        <h1>My Personal Profile</h1>
+    </header>
+
+    <!-- Semantic: nav -->
+    <nav>
+        <a href="#profile">Profile</a> |
+        <a href="#register">Registration Form</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Semantic: section + article (Table) -->
+    <section id="profile">
+        <article>
+            <h2>Personal Information</h2>
+            <p>This table shows my basic personal information.</p>
+
+            <table border="1">
+                <tr>
+                    <th>Attribute</th>
+                    <th>Detail</th>
+                    <th>Remarks</th>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>NAIM</td>
+                    <td>NAIM JAMALULLAIL</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>20</td>
+                    <td>Years old</td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>Student</td>
+                    <td>Computer Science</td>
+                </tr>
+                <tr>
+                    <td>Hobby</td>
+                    <td>Reading, Gaming, Coding</td>
+                    <td>Free time activities</td>
+                </tr>
+            </table>
+        </article>
+    </section>
+
+    <!-- Semantic: section + article (Form) -->
+    <section id="register">
+        <article>
+            <h2>Registration Form</h2>
+
+            <form action="submit_form.php" method="post">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="firstname"><br><br>
+
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lastname"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+
+                <label>Favorite Hobbies:</label><br>
+                <input type="checkbox" id="hobby1" name="hobby1" value="Reading">
+                <label for="hobby1">Reading</label><br>
+                <input type="checkbox" id="hobby2" name="hobby2" value="Gaming">
+                <label for="hobby2">Gaming</label><br>
+                <input type="checkbox" id="hobby3" name="hobby3" value="Coding">
+                <label for="hobby3">Coding</label><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <!-- Semantic: footer -->
+    <footer id="contact">
+        <p>Copyright &copy; 2026 My Personal Profile Page</p>
+    </footer>
+
+</body>
+</html>

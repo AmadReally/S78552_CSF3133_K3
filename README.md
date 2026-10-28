@@ -60,7 +60,10 @@ S78552_CSF3133_K3/
     └── kopi-roti.jpg
 └── LAB2/
     ├── table.html
-    ├── lab2.html 
+    ├── lab2.html
+    ├── semantic.html
+    ├── form.html
+
 ---
  
 ## 👤 Pelajar

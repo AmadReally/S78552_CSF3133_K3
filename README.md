@@ -20,6 +20,8 @@ Klik link di bawah untuk terus buka website:
 | 📇 Lab 1 (Problem B) | Campus Coding Club: contact page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/contact.html) |
 | 📇 Lab 2 | Personal webpage  | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2.html) |
 | 📇 Lab 2 (Problem A) | Insert Data: table page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/table.html) |
+| 📇 Lab 2 (Problem A) | Insert Data: form page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/form.html) |
+| 📇 Lab 2 (Problem A) | Insert Data: semantic page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/semantic.html) |
 
  
 ---

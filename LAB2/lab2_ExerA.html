@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CS Programming Workshop 2026</title>
+</head>
+<body>
+
+    <!-- HEADER: event name (h1) and a short tagline -->
+    <header>
+        <h1>CS Programming Workshop 2026</h1>
+        <p>Learn to build your first web page in one day.</p>
+    </header>
+
+    <!-- NAV: internal links that jump to each section of the page -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <!-- SECTION 1: About the Event, with two article elements -->
+    <section id="about">
+        <h2>About the Event</h2>
+        <p>A one-day workshop organised for students of the faculty on Saturday, 15 November 2026.</p>
+
+        <!-- ARTICLE 1: first activity -->
+        <article>
+            <h3>Hands-on Web Development Sessions</h3>
+            <p>Guided sessions where students write HTML pages step by step with help from lecturers.</p>
+        </article>
+
+        <!-- ARTICLE 2: second activity -->
+        <article>
+            <h3>Mini Hackathon</h3>
+            <p>Students work in small teams to build a simple web page and present it to the judges.</p>
+        </article>
+    </section>
+
+    <!-- SECTION 2: Event Schedule, shown as a table -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <!-- TABLE: header cells (th), one colspan row and one rowspan cell -->
+        <table border="1">
+            <caption>Programme for the day</caption>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>8:30 AM - 9:00 AM</td>
+                <td>Registration and Welcome</td>
+                <td>Main Lobby</td>
+                <td>Organising Committee</td>
+            </tr>
+            <!-- ROWSPAN: the next two sessions are held in the same venue -->
+            <tr>
+                <td>9:00 AM - 10:30 AM</td>
+                <td>Session 1: Introduction to HTML</td>
+                <td rowspan="2">Computer Lab 1</td>
+                <td>Dr. Aisyah</td>
+            </tr>
+            <tr>
+                <td>10:30 AM - 12:00 PM</td>
+                <td>Session 2: Tables and Forms</td>
+                <td>Mr. Hafiz</td>
+            </tr>
+            <!-- COLSPAN: lunch break spans Activity, Venue and Person in Charge -->
+            <tr>
+                <td>12:00 PM - 1:30 PM</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>1:30 PM - 3:00 PM</td>
+                <td>Session 3: Semantic HTML</td>
+                <td>Computer Lab 2</td>
+                <td>Ms. Nurul</td>
+            </tr>
+            <tr>
+                <td>3:00 PM - 5:00 PM</td>
+                <td>Mini Hackathon</td>
+                <td>Computer Lab 2</td>
+                <td>Mr. Amir</td>
+            </tr>
+            <tr>
+                <td>5:00 PM - 5:30 PM</td>
+                <td>Closing and Prize Giving</td>
+                <td>Main Hall</td>
+                <td>Organising Committee</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- SECTION 3: Registration form -->
+    <section id="register">
+        <h2>Registration</h2>
+
+        <form action="register.html" method="post">
+
+            <!-- TEXT INPUTS: each label's "for" matches the input "id" -->
+            <p>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+            </p>
+            <p>
+                <label for="matric">Matric Number:</label>
+                <input type="text" id="matric" name="matric">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <!-- RADIO BUTTONS: same name, so only one year can be selected -->
+            <fieldset>
+                <legend>Year of Study:</legend>
+                <input type="radio" id="year1" name="year" value="1">
+                <label for="year1">Year 1</label>
+                <input type="radio" id="year2" name="year" value="2">
+                <label for="year2">Year 2</label>
+                <input type="radio" id="year3" name="year" value="3">
+                <label for="year3">Year 3</label>
+                <input type="radio" id="year4" name="year" value="4">
+                <label for="year4">Year 4</label>
+            </fieldset>
+
+            <!-- CHECKBOXES: sessions the student wants to join -->
+            <fieldset>
+                <legend>Sessions to join:</legend>
+                <input type="checkbox" id="s1" name="sessions" value="session1">
+                <label for="s1">Session 1: Introduction to HTML</label><br>
+                <input type="checkbox" id="s2" name="sessions" value="session2">
+                <label for="s2">Session 2: Tables and Forms</label><br>
+                <input type="checkbox" id="s3" name="sessions" value="session3">
+                <label for="s3">Session 3: Semantic HTML</label><br>
+                <input type="checkbox" id="s4" name="sessions" value="hackathon">
+                <label for="s4">Mini Hackathon</label>
+            </fieldset>
+
+            <!-- DROP-DOWN LIST: programme (4 options) -->
+            <p>
+                <label for="programme">Programme:</label>
+                <select id="programme" name="programme">
+                    <option value="cs">Computer Science</option>
+                    <option value="se">Software Engineering</option>
+                    <option value="ds">Data Science</option>
+                    <option value="it">Information Technology</option>
+                </select>
+            </p>
+
+            <!-- SUBMIT BUTTON -->
+            <p>
+                <input type="submit" value="Register">
+            </p>
+        </form>
+    </section>
+
+    <!-- FOOTER: organiser name and copyright line -->
+    <footer>
+        <p>Organised by the Faculty Student Committee</p>
+        <p>&copy; 2026 CS Programming Workshop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -22,6 +22,8 @@ Klik link di bawah untuk terus buka website:
 | 📇 Lab 2 (Problem A) | Insert Data: table page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/table.html) |
 | 📇 Lab 2 (Problem A) | Insert Data: form page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/form.html) |
 | 📇 Lab 2 (Problem A) | Insert Data: semantic page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/semantic.html) |
+| 📇 Lab 2 (Problem A) | LabExerA | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2_ExerA.html) |
+| 📇 Lab 2 (Problem B) | LabExerB | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2_ExerB.html) |
 
  
 ---
@@ -63,6 +65,8 @@ S78552_CSF3133_K3/
     ├── lab2.html
     ├── semantic.html
     ├── form.html
+    ├── lab2_ExerA.html
+    ├── lab2_ExerB.html
 
 ---
  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lab 3</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div>
+        <h1>Contact Us</h1>
+        <span>We would love to hear from you</span>
+    </div>
+
+    <!-- Content Section -->
+    <div>
+
+        <!-- Contact Form -->
+        <div>
+            <h2>Contact Form</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="contactDate">Preferred Contact Date:</label>
+                <input type="date" id="contactDate" name="contactDate"><br><br>
+
+                <label for="satisfaction">Satisfaction Level:</label>
+                <input type="range" id="satisfaction" name="satisfaction" min="0" max="10"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <!-- Inline Calculator -->
+        <div>
+            <h2>Inline Calculator</h2>
+            <input type="number" id="x" oninput="result.value = parseInt(x.value || 0) + parseInt(y.value || 0)">
+            +
+            <input type="number" id="y" oninput="result.value = parseInt(x.value || 0) + parseInt(y.value || 0)">
+            =
+            <output name="result" for="x y" id="result"></output>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div>
+        <p>Contact us at: naimjamalullail@gmail.com</p>
+        <p>&copy; 2026 Naim Jamalullail. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

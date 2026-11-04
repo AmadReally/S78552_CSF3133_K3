@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSF3133 Web Design - Lab Portfolio</title>
+<style>
+    :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --card-border: #334155;
+        --text: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-2: #a78bfa;
+        --good: #34d399;
+    }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.5;
+    }
+    header {
+        text-align: center;
+        padding: 56px 20px 32px;
+        background: linear-gradient(135deg, #1e293b, #0f172a);
+        border-bottom: 1px solid var(--card-border);
+    }
+    header h1 {
+        margin: 0 0 8px;
+        font-size: 2rem;
+    }
+    header p {
+        color: var(--muted);
+        margin: 4px 0;
+    }
+    .badges {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .badge {
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        background: #0ea5e933;
+        color: var(--accent);
+        border: 1px solid #0ea5e966;
+    }
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+    }
+    .lab-section {
+        margin-bottom: 48px;
+    }
+    .lab-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 16px;
+        border-left: 4px solid var(--accent);
+        padding-left: 12px;
+    }
+    .lab-title h2 {
+        margin: 0;
+        font-size: 1.4rem;
+    }
+    .folder-link {
+        font-size: 0.85rem;
+        color: var(--accent-2);
+        text-decoration: none;
+        border: 1px solid var(--accent-2);
+        padding: 6px 14px;
+        border-radius: 8px;
+        transition: background 0.2s;
+        white-space: nowrap;
+    }
+    .folder-link:hover {
+        background: #a78bfa22;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+    }
+    .card {
+        background: var(--card);
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        padding: 18px;
+    }
+    .card h3 {
+        margin: 0 0 6px;
+        font-size: 1rem;
+    }
+    .card p {
+        margin: 0 0 12px;
+        color: var(--muted);
+        font-size: 0.85rem;
+    }
+    .card a.open {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: #0f172a;
+        background: var(--accent);
+        padding: 6px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .card a.open:hover {
+        opacity: 0.85;
+    }
+    .validation-block {
+        margin-top: 28px;
+    }
+    .validation-block h3 {
+        font-size: 1rem;
+        color: var(--good);
+        margin-bottom: 12px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+    }
+    .gallery figure {
+        margin: 0;
+        background: var(--card);
+        border: 1px solid var(--card-border);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .gallery img {
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid var(--card-border);
+    }
+    .gallery figcaption {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        color: var(--muted);
+    }
+    footer {
+        text-align: center;
+        padding: 24px;
+        color: var(--muted);
+        font-size: 0.85rem;
+        border-top: 1px solid var(--card-border);
+    }
+    footer a {
+        color: var(--accent);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>CSF3133 — Web-Based Interface Design</h1>
+    <p>Lab Portfolio by Naim Jamalullail Bin Jasmani</p>
+    <p>Universiti Malaysia Terengganu</p>
+    <div class="badges">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS</span>
+        <span class="badge">W3C Validated</span>
+    </div>
+</header>
+
+<main>
+
+    <section class="lab-section">
+        <div class="lab-title">
+            <h2>Lab 1 — Introduction to HTML</h2>
+            <a class="folder-link" href="https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB1" target="_blank">View Folder ↗</a>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Personal Webpage</h3>
+                <p>lab1.html</p>
+                <a class="open" href="LAB1/lab1.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Problem A — Kopi &amp; Roti Café</h3>
+                <p>lab1_ExerA.html</p>
+                <a class="open" href="LAB1/lab1_ExerA.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Problem B — Campus Coding Club</h3>
+                <p>lab1_ExerB.html</p>
+                <a class="open" href="LAB1/lab1_ExerB.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Problem B — Contact Page</h3>
+                <p>contact.html</p>
+                <a class="open" href="LAB1/contact.html">Open</a>
+            </div>
+        </div>
+
+        <div class="validation-block">
+            <h3>✅ W3C Validation</h3>
+            <div class="gallery">
+                <figure>
+                    <img src="LAB1/Validation_lab1.png" alt="Validation result for lab1.html">
+                    <figcaption>lab1.html</figcaption>
+                </figure>
+                <figure>
+                    <img src="LAB1/Validation_contact.png" alt="Validation result for contact.html">
+                    <figcaption>contact.html</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="lab-section">
+        <div class="lab-title">
+            <h2>Lab 2 — Tables, Forms &amp; Semantic HTML</h2>
+            <a class="folder-link" href="https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB2" target="_blank">View Folder ↗</a>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Personal Profile Page</h3>
+                <p>lab2.html</p>
+                <a class="open" href="LAB2/lab2.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Table Page</h3>
+                <p>table.html</p>
+                <a class="open" href="LAB2/table.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Form Page</h3>
+                <p>form.html</p>
+                <a class="open" href="LAB2/form.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Semantic Page</h3>
+                <p>semantic.html</p>
+                <a class="open" href="LAB2/semantic.html">Open</a>
+            </div>
+        </div>
+
+        <div class="validation-block">
+            <h3>✅ W3C Validation</h3>
+            <div class="gallery">
+                <figure>
+                    <img src="LAB2/ValidationLAB1_EXERB.png" alt="Validation result for Lab 1 exercise B">
+                    <figcaption>Lab 1 — Exercise B</figcaption>
+                </figure>
+                <figure>
+                    <img src="LAB2/ValidationLAB2_EXERB.png" alt="Validation result for Lab 2 exercise B">
+                    <figcaption>Lab 2 — Exercise B</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="lab-section">
+        <div class="lab-title">
+            <h2>Lab 3 — HTML5</h2>
+            <a class="folder-link" href="https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB3" target="_blank">View Folder ↗</a>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Lab Exercise 3 — Contact Form + Calculator</h3>
+                <p>lab3.html</p>
+                <a class="open" href="LAB3/lab3.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Block vs Inline Elements</h3>
+                <p>block.html</p>
+                <a class="open" href="LAB3/block.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Organizing with div</h3>
+                <p>div.html</p>
+                <a class="open" href="LAB3/div.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>HTML Entities</h3>
+                <p>entity.html</p>
+                <a class="open" href="LAB3/entity.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>HTML5 Intro</h3>
+                <p>intro5.html</p>
+                <a class="open" href="LAB3/intro5.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>HTML5 Input Types</h3>
+                <p>input5.html</p>
+                <a class="open" href="LAB3/input5.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Input Attributes</h3>
+                <p>inattribute5.html</p>
+                <a class="open" href="LAB3/inattribute5.html">Open</a>
+            </div>
+            <div class="card">
+                <h3>Output Element</h3>
+                <p>output5.html</p>
+                <a class="open" href="LAB3/output5.html">Open</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    Built with HTML5 &amp; CSS — CSF3133 Web-Based Interface Design, Universiti Malaysia Terengganu<br>
+    <a href="https://github.com/AmadReally/S78552_CSF3133_K3" target="_blank">View full repository on GitHub</a>
+</footer>
+
+</body>
+</html>

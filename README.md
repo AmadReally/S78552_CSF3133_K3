@@ -11,29 +11,7 @@ Koleksi lab exercise **CSF3133 (Web Design)** di Universiti Malaysia Terengganu 
  
 Klik link di bawah untuk terus buka website:
 
-| Lab | Penerangan | Link |
-|-----|------------|------|
-| 🦕 Main | Readme  page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/) |
-| 🙋 Lab 1 | Personal webpage | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1.html) |
-| ☕ Lab 1 (Problem A) | Local business page: Kopi & Roti Café | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerA.html) |
-| 💻 Lab 1 (Problem B) | Campus Coding Club: home page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/lab1_ExerB.html) |
-| 📇 Lab 1 (Problem B) | Campus Coding Club: contact page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB1/contact.html) |
-| 📇 Lab 2 | Personal webpage  | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2.html) |
-| 📇 Lab 2 (Problem A) | Insert Data: table page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/table.html) |
-| 📇 Lab 2 (Problem A) | Insert Data: form page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/form.html) |
-| 📇 Lab 2 (Problem A) | Insert Data: semantic page | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/semantic.html) |
-| 📇 Lab 2 (Problem A) | LabExerA | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2_ExerA.html) |
-| 📇 Lab 2 (Problem B) | LabExerB | [Buka](https://amadreally.github.io/S78552_CSF3133_K3/LAB2/lab2_ExerB.html) |
-
- 
----
-
-### 📁 Folder
-
-| Folder | Penerangan | Link |
-| --- | --- | --- |
-| `LAB1` | Folder Lab 1 | [Buka](https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB1) |
-| `LAB2` | Folder Lab 2 | [Buka](https://github.com/AmadReally/S78552_CSF3133_K3/tree/main/LAB2) |
+![https://amadreally.github.io/S78552_CSF3133_K3]
 
  
 ## 📚 Apa yang dipraktikkan
@@ -47,29 +25,3 @@ Klik link di bawah untuk terus buka website:
 - Komen HTML dan validation menggunakan [W3C Validator](https://validator.w3.org)
 ---
  
-## 📁 Struktur Folder
- 
-```
-S78552_CSF3133_K3/
-├── README.md
-└── LAB1/
-    ├── lab1.html
-    ├── lab1_ExerA.html
-    ├── lab1_ExerB.html
-    ├── contact.html
-    ├── index.html
-    ├── club.jpg
-    └── kopi-roti.jpg
-└── LAB2/
-    ├── table.html
-    ├── lab2.html
-    ├── semantic.html
-    ├── form.html
-    ├── lab2_ExerA.html
-    ├── lab2_ExerB.html
-
----
- 
-## 👤 Pelajar
- 
-⭐ Dibuat dengan HTML 

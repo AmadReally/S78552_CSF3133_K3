@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>e-Café Campus</title>
+<link rel="stylesheet" href="cafe.css">
+</head>
+<body>
+
+<!--
+Error 1 (Line 7): CSS used HTML comment markers instead of a CSS comment (/* ... */)
+-> the navigation bar styles were moved into cafe.css using correct CSS comments.
+Error 2 (Line 9): list-style-type: no; is an invalid value -> fixed to "none".
+Error 3 (Line 13-16): the link states were declared in the wrong order
+(link, hover, visited, active), so :hover never overrode :visited -> reordered to the
+correct LVHA order: link, visited, hover, active.
+Error 4 (Line 17): text-decoration: overlined; is an invalid value -> fixed to "overline".
+Error 5 (Line 18): p {color #333333; ...} is missing a colon after "color" -> fixed to
+"color: #333333;".
+Error 6 (Line 19-22): the #intro rule was never closed with a "}" before the next
+selector began -> added the missing closing brace.
+Error 7 (Line 22): "highlight {" is missing the "." needed for a class selector ->
+fixed to ".highlight {".
+Error 8 (Line 19 vs Line 41): the CSS used ID selector "#intro" but the paragraph in
+the HTML uses class="intro" -> fixed the selector to ".intro" so the style applies.
+Error 9 (Line 34): href="menu" is missing the "#", so the Menu link does not jump to
+the section -> fixed to href="#menu".
+Error 10 (Line 42 & 46): both <article> elements used the same id="item", but ids
+must be unique on a page -> changed to id="item1" and id="item2".
+Error 11 (Line 53): <video> was missing the "controls" attribute, so it could not be
+played -> added "controls".
+Error 12 (Line 54): type="mp4" is not a valid MIME type for the source -> fixed to
+"video/mp4".
+-->
+
+<!-- Header -->
+<header>
+    <h1>e-Café Campus</h1>
+</header>
+
+<!-- Navigation bar: styles now live in cafe.css -->
+<nav>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Menu section -->
+<section id="menu">
+    <h2>Today's Menu</h2>
+    <p class="intro">Freshly brewed coffee and local delights every day.</p>
+    <article id="item1">
+        <h3>Kopi Tarik</h3>
+        <p><span class="old-price">RM 4.50</span> <span class="highlight">RM 3.50</span></p>
+    </article>
+    <article id="item2">
+        <h3>Nasi Lemak</h3>
+        <p><span class="old-price">RM 6.00</span> <span class="highlight">RM 5.00</span></p>
+    </article>
+</section>
+
+<!-- Video section -->
+<section id="video">
+    <h2>Watch Our Story</h2>
+    <figure>
+        <video width="400" height="300" controls>
+            <source src="cafe.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <figcaption>A quick look inside e-Café Campus.</figcaption>
+    </figure>
+</section>
+
+<!-- New: feedback section with form -->
+<section id="feedback">
+    <h2>Feedback</h2>
+    <form class="feedback-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Visit type:</p>
+        <input type="radio" id="dinein" name="visittype" value="dinein">
+        <label for="dinein">Dine-in</label>
+        <input type="radio" id="takeaway" name="visittype" value="takeaway">
+        <label for="takeaway">Take-away</label><br><br>
+
+        <p>Favourite items:</p>
+        <input type="checkbox" id="kopi" name="favourite" value="kopi">
+        <label for="kopi">Kopi Tarik</label>
+        <input type="checkbox" id="nasi" name="favourite" value="nasi">
+        <label for="nasi">Nasi Lemak</label>
+        <input type="checkbox" id="roti" name="favourite" value="roti">
+        <label for="roti">Roti Canai</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <p>&copy; 2026 e-Café Campus</p>
+    <address>
+        Contact us at <a href="mailto:hello@ecafecampus.my">hello@ecafecampus.my</a>
+    </address>
+</footer>
+
+</body>
+</html>

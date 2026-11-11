@@ -1,0 +1,49 @@
+/* Navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Headings */
+h1 {
+    text-decoration: overline;
+    text-align: center;
+}
+h2 {
+    text-decoration: underline;
+}
+
+/* Link states (must stay in this order: link, visited, hover, active) */
+a:link { color: #1A5276; }
+a:visited { color: #7D3C98; }
+a:hover { color: #E67E22; }
+a:active { color: #C0392B; }
+
+/* Contact form */
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    width: 300px;
+}
+
+/* Video caption */
+.caption {
+    font-style: italic;
+    text-align: center;
+}

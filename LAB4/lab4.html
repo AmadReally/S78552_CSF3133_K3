@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab Exercise 4</title>
+<link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>My Personal Webpage</h1>
+</header>
+
+<!-- Navigation bar: unordered list styled with CSS -->
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#form">Contact Form</a></li>
+    </ul>
+</nav>
+
+<!-- About section -->
+<section id="about">
+    <article>
+        <h2>About Me</h2>
+        <p>Welcome to my personal webpage, built using HTML5 semantic elements and CSS.</p>
+    </article>
+</section>
+
+<!-- Video section -->
+<section id="video">
+    <h2>My Favourite Video</h2>
+    <video width="400" height="300" controls>
+        <source src="sample.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p class="caption">A short video clip.</p>
+</section>
+
+<!-- Interactive form section -->
+<section id="form">
+    <h2>Contact Form</h2>
+    <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <p>Favourite Hobbies:</p>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="coding" name="hobbies" value="coding">
+        <label for="coding">Coding</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Naim Jamalullail</p>
+</footer>
+
+</body>
+</html>

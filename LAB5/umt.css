@@ -1,0 +1,159 @@
+/* Step 5: Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Body: background + font */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f1fa;
+    color: #222222;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background-color: #4a2c82;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+/* Logo on a white badge so the dark text stays visible */
+.logo {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 160px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+}
+header h1 {
+    margin: 0 0 8px 0;
+}
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2d1a57;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    padding: 14px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+nav li a:hover {
+    background-color: #f39c12;
+    color: #111111;
+}
+
+/* Page layout: spacing and margins between sections */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+section {
+    margin-bottom: 30px;
+}
+.card {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+h2 {
+    color: #4a2c82;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 6px;
+}
+
+/* Text alignment and spacing */
+p {
+    text-align: justify;
+    margin: 0 0 14px 0;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+caption {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+th, td {
+    border: 1px solid #bbbbbb;
+    padding: 10px 14px;
+    text-align: left;
+}
+th {
+    background-color: #4a2c82;
+    color: #ffffff;
+}
+tbody tr:nth-child(even) {
+    background-color: #ece6f7;
+}
+tbody tr:hover {
+    background-color: #fde3b0;
+}
+
+/* Footer: subtle background, centered text */
+footer {
+    background-color: #ddd5ee;
+    color: #333333;
+    text-align: center;
+    padding: 18px 10px;
+}
+footer p {
+    text-align: center;
+    margin: 0 0 4px 0;
+}
+address {
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* Table wrapper: lets the table scroll on narrow screens */
+.table-wrap {
+    overflow-x: auto;
+}
+
+/* Responsive: small screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+    nav li {
+        float: none;
+    }
+    nav li a {
+        text-align: left;
+    }
+    main {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+    .card {
+        padding: 15px;
+    }
+    p {
+        text-align: left;
+    }
+    th, td {
+        padding: 8px;
+    }
+}

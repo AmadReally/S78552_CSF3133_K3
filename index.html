@@ -167,6 +167,15 @@
     footer a {
         color: #00A19C;
     }
+    #all-files-list h3 {
+        font-size: 0.95rem;
+        margin: 16px 0 6px;
+        color: #0a0e0e;
+    }
+    #all-files-list ul.file-list a {
+        padding-bottom: 10px;
+        word-break: break-all;
+    }
 </style>
 </head>
 <body>
@@ -355,6 +364,16 @@
             </div>
         </div>
     </section>
+    <hr>
+    <section id="all-files">
+        <h2>All Files in Repository</h2>
+        <p>This list is read directly from the GitHub repository, so every file that is pushed appears here automatically.</p>
+        <div id="all-files-list">Loading file list...</div>
+        <noscript>
+            <p>JavaScript is needed to show this list. See the files on
+            <a href="https://github.com/AmadReally/S78552_CSF3133_K3" target="_blank">GitHub</a>.</p>
+        </noscript>
+    </section>
 </main>
 
 <footer>
@@ -364,5 +383,65 @@
 
 </div>
 
+<script>
+(function () {
+    var owner = "AmadReally";
+    var repo = "S78552_CSF3133_K3";
+    var branch = "main";
+    var box = document.getElementById("all-files-list");
+
+    function showError() {
+        box.textContent = "Could not load the file list. ";
+        var a = document.createElement("a");
+        a.href = "https://github.com/" + owner + "/" + repo;
+        a.target = "_blank";
+        a.textContent = "View the repository on GitHub";
+        box.appendChild(a);
+    }
+
+    function encodePath(path) {
+        return path.split("/").map(encodeURIComponent).join("/");
+    }
+
+    fetch("https://api.github.com/repos/" + owner + "/" + repo + "/git/trees/" + branch + "?recursive=1")
+        .then(function (res) {
+            if (!res.ok) { throw new Error("HTTP " + res.status); }
+            return res.json();
+        })
+        .then(function (data) {
+            var groups = {};
+            data.tree.forEach(function (item) {
+                if (item.type !== "blob") { return; }
+                var slash = item.path.indexOf("/");
+                var folder = slash === -1 ? "(root)" : item.path.substring(0, slash);
+                var name = slash === -1 ? item.path : item.path.substring(slash + 1);
+                if (!groups[folder]) { groups[folder] = []; }
+                groups[folder].push({ path: item.path, name: name });
+            });
+
+            box.textContent = "";
+            Object.keys(groups).sort().forEach(function (folder) {
+                var h = document.createElement("h3");
+                h.textContent = folder === "(root)" ? "Root folder" : folder;
+                box.appendChild(h);
+
+                var ul = document.createElement("ul");
+                ul.className = "file-list";
+                groups[folder].sort(function (a, b) {
+                    return a.name.toLowerCase().localeCompare(b.name.toLowerCase());
+                }).forEach(function (f) {
+                    var li = document.createElement("li");
+                    var a = document.createElement("a");
+                    a.href = encodePath(f.path);
+                    a.textContent = f.name;
+                    li.appendChild(a);
+                    ul.appendChild(li);
+                });
+                box.appendChild(ul);
+            });
+        })
+        .catch(showError);
+})();
+</script>
 </body>
 </html>

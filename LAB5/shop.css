@@ -1,0 +1,139 @@
+/* ==========================================================
+   shop.css - Campus Bookstore
+   ========================================================== */
+
+/* Page background and body font.
+   paper.gif appears once at the top right (no-repeat + right top). */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f3ea;
+    background-image: url("paper.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/* Centered column so the paper background stays visible on wide screens */
+.page {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Navigation bar: dark horizontal bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Hover effect for the menu links */
+li a:hover {
+    background-color: #111;
+}
+/* Active (current page) link in a different colour */
+li a.active {
+    background-color: #04AA6D;
+}
+
+/* Headings: Merriweather is the second Google Font */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Title: blue and centred (the corrected version of the given h1 styles) */
+h1 {
+    color: #1B4F72;
+    text-align: center;
+}
+
+/* Header with a background image, covering the whole area, with white text */
+header {
+    background-image: url("books.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+header h1 {
+    margin: 0 0 10px 0;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+header p {
+    display: inline-block;
+    margin: 0;
+    padding: 4px 14px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 4px;
+}
+
+/* Main content and paragraphs */
+main {
+    padding: 10px 20px 25px 20px;
+}
+p {
+    line-height: 1.6;
+}
+
+/* Table: single borders, full width */
+#products {
+    border-collapse: collapse;
+    width: 100%;
+}
+#products td,
+#products th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+/* Grey colour on every even row */
+#products tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Hover effect on table rows */
+#products tbody tr:hover {
+    background-color: #ddd;
+}
+/* Table header: green, uppercase, centred, 12px padding top and bottom */
+#products th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* Price column aligned to the right */
+#products td:last-child {
+    text-align: right;
+}
+
+/* Footer: subtle background, centred text and padding */
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Small screens: stack the menu */
+@media (max-width: 600px) {
+    li {
+        float: none;
+    }
+    header {
+        padding: 40px 15px;
+    }
+}

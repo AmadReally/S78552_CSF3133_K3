@@ -1,0 +1,141 @@
+/* ==========================================================
+   food.css - Taste of Terengganu Food Festival
+   ========================================================== */
+
+/* Page: background colour, text colour and body font */
+body {
+    margin: 0;
+    background-color: #FBF7F0;
+    color: #2C2C2C;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* Part 1: Header with background image */
+header {
+    background-image: url("header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 90px 20px 50px 20px;
+}
+header h1 {
+    margin: 0 0 10px 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 48px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+header p {
+    display: inline-block;
+    margin: 0;
+    padding: 4px 14px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+/* Part 2: Horizontal navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    padding: 14px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+nav li a:hover {
+    background-color: #111;
+}
+/* Current page */
+nav li a.active {
+    background-color: #E67E22;
+}
+
+/* Part 3: Content width, headings and paragraphs */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+h2 {
+    margin-top: 30px;
+    color: #1B4F72;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 24px;
+}
+p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* Part 5: Table */
+.table-wrap {
+    overflow-x: auto;
+}
+#stalls {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+}
+#stalls td,
+#stalls th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#stalls th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #E67E22;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+#stalls tbody tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+#stalls tbody tr:hover {
+    background-color: #FDEBD0;
+}
+/* Prices aligned to the right */
+#stalls td:last-child {
+    text-align: right;
+}
+
+/* Part 6: Footer */
+footer {
+    background-color: #EFE6D8;
+    text-align: center;
+    padding: 12px 10px;
+}
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+    header {
+        padding: 60px 15px 30px 15px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    nav li {
+        float: none;
+    }
+    p {
+        text-align: left;
+    }
+}

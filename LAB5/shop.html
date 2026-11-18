@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+    <!-- Part 2, step 8: two Google Fonts in one link tag (Roboto for text, Merriweather for headings) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet">
+    <!-- Error 1 fixed here (shop.html, Line 7) -->
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+<!--
+Errors found in the given code (line numbers refer to the given code in the question):
+
+Error 1 (shop.html, Line 7): rel="stylesheets" is invalid, so shop.css was never loaded -> changed to rel="stylesheet".
+Error 2 (shop.html, Lines 10-12): a style element is not allowed inside body -> removed it; the h1 rule now lives in shop.css.
+Error 3 (shop.html, Line 18): style="color=#1B4F72;" uses = instead of a colon, so the title was not blue -> moved to shop.css as color: #1B4F72.
+Error 4 (shop.html, Line 20): table id="product" does not match the #products selectors in the CSS -> changed to id="products".
+Error 5 (shop.css, Line 2): font name 'Robotto' is misspelled, so the default font was shown -> fixed to 'Roboto'.
+Error 6 (shop.css, Line 4): background-repeat: no repeat is invalid, so the image kept repeating -> fixed to no-repeat.
+Error 7 (shop.css, Line 5): bacground-position is misspelled -> fixed to background-position.
+Error 8 (shop.css, Line 18): li a used display: inline, so the padding did not make a proper bar -> fixed to display: block.
+Error 9 (shop.css, Line 23): the selector li:a:hover is wrong -> fixed to li a:hover.
+Error 10 (shop.css, Line 27): border-collapse: collapsed is invalid, so the table had double borders -> fixed to collapse.
+Error 11 (shop.css, Line 34): tr:nth-child(2) colours only row 2 -> fixed to tr:nth-child(even) for every even row.
+Error 12 (shop.css, Line 37): tr:hovered is not a valid pseudo-class, so there was no hover effect -> fixed to tr:hover.
+Error 13 (shop.css, Line 45): missing semicolon after background-color: #f1f1f1 -> added the semicolon.
+
+Note: in Part 2 the title is placed in a header with a background image, so the h1 is white there (readable on the image). The blue h1 rule is still in shop.css.
+-->
+
+<div class="page">
+
+    <!-- Part 2, step 5: navigation bar inside nav -->
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Part 2, step 5: title moved into a header with a background image -->
+    <header id="home">
+        <h1>Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <main id="books">
+        <h2>Our Products</h2>
+        <p>Pick up everything you need for the new semester, from textbooks to stationery and gadgets.</p>
+        <table id="products">
+            <thead>
+                <tr><th>Item</th><th>Category</th><th>Price (RM)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Web Design Basics</td><td>Textbook</td><td>45.00</td></tr>
+                <tr><td>A4 Notebook</td><td>Stationery</td><td>6.50</td></tr>
+                <tr><td>USB Drive 32GB</td><td>Gadget</td><td>25.00</td></tr>
+                <tr><td>Highlighter Set</td><td>Stationery</td><td>9.90</td></tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer id="contact">
+        &copy; 2026 Campus Bookstore
+    </footer>
+
+</div>
+</body>
+</html>

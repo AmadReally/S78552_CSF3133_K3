@@ -1,0 +1,131 @@
+/* ==========================================================
+   style.css - Web Design Quiz
+   ========================================================== */
+
+/* Page background and font */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #e8eefc, #f6e9fb);
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #3b3b98;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+header h1 {
+    margin: 0 0 8px 0;
+}
+header p {
+    margin: 0;
+}
+
+/* Main content: centred column */
+main {
+    flex: 1;
+    width: 90%;
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+/* White cards for each section */
+.card {
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none;
+}
+
+/* Question number and timer on one line */
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-size: 14px;
+}
+.timer {
+    font-weight: bold;
+    color: #3b3b98;
+}
+/* Timer turns red when time is almost up */
+.timer.low {
+    color: #d63031;
+}
+
+/* Answer options */
+#options label {
+    display: block;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#options label:hover {
+    background-color: #eef1ff;
+    border-color: #3b3b98;
+}
+#options label.correct {
+    background-color: #d4f5dd;
+    border-color: #27ae60;
+}
+#options label.wrong {
+    background-color: #fbd9d9;
+    border-color: #d63031;
+}
+
+/* Feedback message */
+.feedback {
+    min-height: 24px;
+    font-weight: bold;
+}
+.feedback.good {
+    color: #27ae60;
+}
+.feedback.bad {
+    color: #d63031;
+}
+
+/* Buttons */
+button {
+    padding: 10px 22px;
+    background-color: #3b3b98;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2c2c78;
+}
+
+/* Footer: score */
+footer {
+    background-color: #2f3640;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    .card {
+        padding: 15px;
+    }
+}

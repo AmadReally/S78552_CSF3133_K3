@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Disable Right-Click</title>
+    <script>
+        // 6.8 Working with events: JavaScript to disable right-click
+        // "contextmenu" fires when the user tries to open the right-click menu
+        document.addEventListener("contextmenu", function(event) {
+            alert("Right-click is disabled on this page.");
+            // preventDefault() stops the browser's normal right-click menu
+            event.preventDefault();
+        });
+    </script>
+</head>
+<body>
+    <h2>Right-Click Disabled</h2>
+    <p>Try right-clicking anywhere on this page.</p>
+</body>
+</html>

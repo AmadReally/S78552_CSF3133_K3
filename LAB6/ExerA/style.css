@@ -1,0 +1,180 @@
+/* ==========================================================
+   style.css - Rock, Paper, Scissors
+   ========================================================== */
+
+/* Page background and font */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+}
+
+/* Header */
+header {
+    width: 90%;
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 15px 20px;
+    background-color: #1B4F72;
+    color: white;
+    border-radius: 6px;
+}
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+header p {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* Main column */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* White panels for each section */
+.panel {
+    background-color: white;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.panel h2 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+/* Small headings used only for structure */
+.section-title {
+    font-size: 13px;
+    color: #666;
+}
+
+/* Name input */
+input[type="text"] {
+    padding: 6px 8px;
+    margin: 0 8px;
+}
+
+/* Buttons: padding, background colour, pointer cursor and hover effect */
+button {
+    padding: 8px 16px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+}
+button:hover {
+    background-color: #1B4F72;
+}
+
+/* Choice buttons */
+.choices {
+    margin-bottom: 10px;
+}
+.choices button {
+    margin-right: 6px;
+}
+
+/* Images: You VS Computer */
+.arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.arena figure {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+.arena figcaption {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+/* Images have a fixed size of 120px; hidden until the first round */
+.choice-img {
+    width: 120px;
+    height: 120px;
+    visibility: hidden;
+}
+.vs {
+    font-weight: bold;
+    color: #666;
+}
+
+/* Result message and scoreboard */
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 26px;
+    margin: 0 0 8px 0;
+}
+.scoreboard {
+    margin: 0;
+    font-size: 14px;
+}
+#summary {
+    margin: 8px 0 0 0;
+    font-weight: bold;
+    color: #1B4F72;
+}
+
+/* History table: border-collapse, borders, padding and a header background */
+#history {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#history th,
+#history td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+    font-size: 13px;
+}
+#history th {
+    background-color: #1B4F72;
+    color: white;
+}
+/* Colour the Result column */
+#history td.Win {
+    color: green;
+    font-weight: bold;
+}
+#history td.Lose {
+    color: red;
+    font-weight: bold;
+}
+#history td.Draw {
+    color: grey;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 10px;
+}
+footer p {
+    margin: 2px 0;
+}
+
+/* Small screens */
+@media (max-width: 500px) {
+    .arena {
+        gap: 10px;
+    }
+    input[type="text"] {
+        width: 60%;
+        margin: 5px 0;
+    }
+}

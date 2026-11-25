@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Quiz</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header: introduces the quiz -->
+<header>
+    <h1>Web Design Quiz</h1>
+    <p>Answer each question before the timer runs out. Questions appear in a random order every time.</p>
+</header>
+
+<main>
+    <!-- Start section: shown before the quiz begins -->
+    <section id="startSection" class="card">
+        <h2>Ready?</h2>
+        <p>There are 8 multiple-choice questions and you have 15 seconds for each one.</p>
+        <button type="button" onclick="startQuiz()">Start Quiz</button>
+    </section>
+
+    <!-- Question section: question, answer options and timer -->
+    <section id="quizSection" class="card hidden">
+        <div class="quiz-top">
+            <span id="questionNumber">Question 1 of 8</span>
+            <span id="timer" class="timer">Time left: 15s</span>
+        </div>
+        <h2 id="questionText">Question text</h2>
+        <div id="options"></div>
+
+        <!-- Feedback section: correct / incorrect after each answer -->
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+
+        <!-- Buttons: submit the answer and move to the next question -->
+        <button type="button" id="submitBtn" onclick="checkAnswer()">Submit Answer</button>
+        <button type="button" id="nextBtn" class="hidden" onclick="nextQuestion()">Next Question</button>
+    </section>
+
+    <!-- Result section: shown after the last question -->
+    <section id="resultSection" class="card hidden">
+        <h2>Quiz Finished!</h2>
+        <p id="finalMessage"></p>
+        <button type="button" onclick="startQuiz()">Play Again</button>
+    </section>
+</main>
+
+<!-- Footer: displays the user's score -->
+<footer>
+    <p id="score">Score: 0</p>
+</footer>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
